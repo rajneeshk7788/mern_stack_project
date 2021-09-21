@@ -8,6 +8,7 @@
 }
 
   .App{
+    background:linear-gradient(45deg,#e9daee,#f7bbbe,#f3d89d);
     text-align: center;
   }
   
@@ -27,14 +28,13 @@ li {
 
 /* navbar style start  */
 .main-nav {
-  background:linear-gradient(45deg,#e9daee,#f7bbbe,#f3d89d);
+  background:linear-gradient(45deg,#f3d89d,#f7bbbe,#e9daee);
   width: 100%;
   height: 7rem;
 
  
   box-shadow: rgba(34, 34, 177, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-  /* padding: auto 10rem; */
   display: grid;
   grid-template-columns: 10rem 1fr 2fr 1fr 10rem;
 }
@@ -45,7 +45,6 @@ li {
 .logo {
   display: grid;
   grid-column: 2/3;
-  /* background-color: antiquewhite; */
   justify-content: start;
   align-items: center;
 }
@@ -91,7 +90,6 @@ li {
 }
 
 .social-media {
-  /* background-color: black; */
   grid-column: 4/5;
 }
 
@@ -182,14 +180,17 @@ li {
     position: relative;
     z-index: 99;
   }
+  
+  
 
   .mobile-menu-link {
-    background-color: white;
+    background-color: rgb(197, 240, 118);
     height: 20rem;
     display: grid;
     grid-column: 2/5;
     align-items: center;
     padding-left: 3rem;
+    border-radius: 10px;
     transition: all 2s linear;
     transform-origin: top;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
@@ -256,6 +257,7 @@ li {
     display: block;
     font-size : 2.5rem;
   }
+  
 }
 
 @media (max-width: 520px) {
@@ -291,6 +293,12 @@ li {
     font-size: 3.8rem;
     
   }
+  img{
+    height: 200px;
+    width: 380px;
+    border-radius: 20px;
+  
+  }
 }
 
 
@@ -317,7 +325,7 @@ li {
 }
 
 
-@media (min-width:   800px) {
+@media (min-width:800px) {
   .signup-form{
     display: grid;   
     grid-template-columns: repeat(2, auto);   
@@ -336,7 +344,7 @@ li {
 }
 
 input{ 
-  background: #1FCE6D;
+  background: #949799;
   justify-content: center;
   width: 250px;
   height: 40px;
@@ -404,7 +412,7 @@ input{
   filter: sepia(100%);
   width: 40%;
 }
-
+ 
 
 
 @media (min-width:   800px) {
@@ -579,6 +587,80 @@ h2{
   margin: 10px;
   font-size: 13px;
 }
+
+/* ___________________Home Page___________________________________ */
+
+  @media(min-width:500px){
+    .Mflex{
+      display: grid;
+      grid-template-columns: repeat(5, 3fr);
+    }
+  }
+
+  @media(max-width:501px){
+    .Mflex{
+      display: grid;
+      grid-template-columns: repeat(2, 3fr);
+    }
+  }
+  .Mflex{
+    background: linear-gradient(45deg,#0ad3f7,#f09ca0,#dbe98b);
+    margin: 3px;
+   
+  }
+
+  .Mcontainer{
+    background-color: rgb(245, 124, 124);
+    margin: 20px;
+  }
+
+.Mcard img{
+  height: 160px;
+  width: 130px;
+  margin-top: 5px; ;
+}
+/* _________________________________________________________________ */
+
+
+@media(min-width:500px){
+  #button{
+    background-color: rgb(199, 236, 225);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media(max-width:501px){
+  #button{
+    background-color: rgb(233, 201, 115);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+.nav_button{
+  background-color: rgba(248, 143, 143, 0.89);
+  justify-content: center;
+}
+
+#button{
+  margin: 2px;
+  justify-content: center;
+}
+
+#Buy_Now{
+  font-size: 20px;
+  padding: 10px;
+}
+#Shop_image{
+  margin: 1px;
+  border-bottom: solid rgb(135, 247, 30)
+}
+/* ___________________Home Page___________________________________ */
+
+
+
 .footer{
   background-color: rgb(82, 81, 81);
   /* display: flex; */

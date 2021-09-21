@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import {  NavLink } from 'react-router-dom';
 import { FaFacebookSquare, FaInstagramSquare, FaYoutubeSquare} from "react-icons/fa";
 import {GiHamburgerMenu } from "react-icons/gi" ;
+
 
 
 const Navebar = () => {
@@ -18,25 +19,25 @@ const Navebar = () => {
                 <div className =   {showMediaIcons ? "menu-link mobile-menu-link":"menu-link"}>
                     <ul>
                         <li>
-                            <Link to="/">Home</Link>
+                            <NavLink to="/">Home</NavLink>
                         </li>
 
                         <li>
                             
-                        <Link to="/About">About</Link>
+                        <NavLink to="/About">About</NavLink>
                         </li>
 
                         <li>
-                        <Link to="/Contact">Contact</Link>
+                        <NavLink to="/Contact">Contact</NavLink>
                         
                         </li>
 
                         <li>
-                        <Link to="/Login">Log In</Link>
+                        <NavLink to="/Login">Log In</NavLink>
                         </li>
 
                         <li>
-                        <Link to="/SignUp">SignUp</Link>
+                        <NavLink to="/SignUp">SignUp</NavLink>
                         </li>
                     </ul>
 
@@ -62,18 +63,13 @@ const Navebar = () => {
                         </li>
 
                     </ul>
-                    <div className="hamburger-menu">
+                    <div className="hamburger-menu" id="hamburger-menu">
                         <a href="#" onClick={()=>setShowMediaIcons(!showMediaIcons)}><GiHamburgerMenu/></a>
                     </div>
 
                 </div>
 
             </nav>
-
-            {/* <section className="hero-seection">
-                <p>Welcom to</p>
-                <h3>Rk</h3>
-            </section> */}
         </>
     )
 }

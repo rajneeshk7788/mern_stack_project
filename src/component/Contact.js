@@ -1,8 +1,4 @@
 import React from 'react';
-// import { NavLink } from 'react-router-dom';
-
-// import Ragistration from "../iamge/unnamed.png";
-
 
 const Contact = () => {
     return (
@@ -71,7 +67,7 @@ const Contact = () => {
                         <form id="contact_form">
 
                             <div className="contact_form_name f-flex justify-content-between align-item-between">
-                                <input type="text" id="contact_form_name" className="contact_form_name"
+                                <input type="text" id="contact_form_name"  className="contact_form_name"
                                     placeholder="Your Name" required="true"
                                 />
 

@@ -1,7 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-
-import Ragistration from "../iamge/unnamed.png";
+import Ragistration from "../image/unnamed.png";
 
 
 const Login = () => {

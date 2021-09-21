@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { NavLink, useHistory } from 'react-router-dom';
-import Ragistration from "../iamge/coding-vector-illustration-260nw-687456625.jpg"
+import Ragistration from "../image/coding-vector-illustration-260nw-687456625.jpg"
 import { config } from '../config/config';
 import axios from 'axios';
 
