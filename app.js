@@ -7,8 +7,10 @@ const contactRoute = require('./api/routes/contact');
 const signupRoute = require('./api/routes/signup');
 const bodyParser = require('body-parser');
 
+const connectionString = process.env.CONNECTION_STRING;
 
-mongoose.connect('mongodb+srv://sbs:raj12345@sbs.cliwn.mongodb.net/mernProject?retryWrites=true&w=majority');
+mongoose.connect(connectionString);
+
 
 mongoose.connection.on('error', err => {
     console.log('connection faild');
